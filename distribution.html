@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./font/css/all.min.css">
+    <title>Distribution</title>
+
+    <style>
+        footer{
+            padding: 0rem 2rem;
+        }
+        h6{
+            padding-left: 4rem;
+        }
+    </style>
+
+</head>
+<body>
+   <header>
+        <div class="title">
+            <h5>Welcome To</h5>
+            <h1>Distribution of www files</h1>
+        </div>
+
+        <h5><strong><a href="./www.html">WWW</a></strong> > <small>Distribution of www files</small></h5>
+   </header>
+
+   <main>
+
+        <h4>
+            Getting the WWW files
+        </h4>
+        <br>
+        <p>
+            Read this if you have not yet got the WWW files you need, and you cannot NFS mount a directory on which they reside.
+        </p>
+        <br>
+
+        <p>
+            The source and binary of WWW project files are currently available (see <a href="">copyright</a> ) by anonymous FTP from node info.cern.ch. This node is currently 128.141.201.74 but THIS MAY CHANGE. The files are compressed tape archive files (.tar.Z). To get a file using anonymous FTP, use user name "anonymous", and your email address as a password:- 
+        </p>
+        <br>
+
+        <h6>
+            > ftp info.cern.ch
+			Enter user name: anonymous
+			Password: me@myhost.edu <br>
+			ftp> cd /pub/www/src <br>
+			ftp> binary <br>
+			ftp> get WWWLineMode_vvv.tar.Z <br>
+			ftp> quit
+			>
+        </h6>
+        <br>
+
+        <p>
+            The file name will depend on the product you want. Here vvv is the version number of the software.
+            <br>
+            Once you have the compressed tar file, you must uncompress it and unwrap it. 
+        </p>
+        <br>
+        <h6>
+            uncompress WWWLineMode_vvv.tar.Z
+        </h6>
+        <br>
+
+        <p>
+            This will make a rather larger file with the name without the ".Z". To unwrap it, 
+        </p>
+        <br>
+        <h6>
+			tar xvf WWWLineMode_vvv.tar
+        </h6>
+        <br>
+
+        <p>Now you should <a href="">install the line mode browser</a> , <a href="">install the server</a> , <a href="">install Viola</a> , etc. </p>
+        
+   </main>
+
+   <footer>
+       <div>
+           <h5>Tim BL</h5>
+       </div>
+        <div>
+            <a href="#">Frequently Asked Questions</a>
+            <i class="fa fa-question"></i>
+        </div>
+   </footer>
+</body>
+</html> 
